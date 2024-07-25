@@ -1,6 +1,8 @@
 ---
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+
+import "../styles/global.css";
 
 const pageTitle = "Home Page";
 ---
@@ -15,16 +17,20 @@ const pageTitle = "Home Page";
 
 		<style>
 			h1 {
-				color: green;
+				color: var(--purple);
 				font-size: 3rem;
 			}
 		</style>
 	</head>
 	<body>
-		<Navigation />
+		<Header />
 
 		<h1>Astro</h1>
 
 		<Footer />
+
+		<script>
+			import "../scripts/menu.js"
+		</script>
 	</body>
 </html>
