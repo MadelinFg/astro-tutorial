@@ -1,24 +1,27 @@
 ---
-import "../styles/variables.css"
+import Social from "./Social.astro";
+
+import "../styles/variables.css";
 
 const platform = "github";
 const username = "MadelinFg";
 ---
 
 <style>
-    footer{
+    footer {
         display: flex;
         justify-content: center;
+        align-items: center;
+        gap: 1rem;
         margin: 0;
         border-top: 1px solid var(--grey);
+        margin-top: 2rem;
+        padding-top: 1rem;
     }
 </style>
 
 <footer>
-    <p>
-        Learn more about my projects on
-        <a href={`https://www.${platform}.com/${username}`} target="_blank"
-            >{platform}</a
-        >!
-    </p>
+    Learn more about me on
+    <Social platform="linkedin" username="in/madelin-flores-1890191a9" />
+    <Social platform="github" username="MadelinFg" />
 </footer>
