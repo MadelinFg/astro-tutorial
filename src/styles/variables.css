@@ -1,6 +1,8 @@
 :root {
     --white: #fff;
     --light-grey: #f1f5f9;
+    --light-grey2: #a1a1a1;
     --grey: #b5b5b5;
-    --purple: #4c1d95;
+    --purple: hsl(264, 67%, 35%);
+    --blue: #00539f;
 }
