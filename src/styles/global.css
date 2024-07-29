@@ -33,14 +33,14 @@ h1 {
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background-color: #ff9776;
+    background-color: var(--dark-blue);
 }
 
 .nav-links {
     width: 100%;
     top: 5rem;
     left: 48px;
-    background-color: #ff9776;
+    background-color: var(--dark-blue);
     display: none;
     margin: 0;
 }
@@ -57,7 +57,7 @@ h1 {
 
 .nav-links a:hover,
 .nav-links a:focus {
-    background-color: #ff9776;
+    background-color: var(--grey);
 }
 
 .expanded {
@@ -65,6 +65,7 @@ h1 {
 }
 
 @media screen and (min-width: 636px) {
+    /* Web */
     .nav-links {
         margin-left: 5em;
         display: block;
@@ -82,3 +83,19 @@ h1 {
         display: none;
     }
 }
+
+/* DARK MODE */
+html.dark {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.dark .nav-links a {
+    color: var(--white);
+}
+
+.dark .hamburger .line {
+    background-color: var(--light-grey);
+}
+
+/* DARK MODE */
